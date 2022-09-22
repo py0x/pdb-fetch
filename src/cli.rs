@@ -25,7 +25,7 @@ pub struct Args {
 
     /// Number of concurrency for batch downloading
     #[clap(long, value_parser, default_value_t = 50, display_order = 4)]
-    pub concurrency: u8,
+    pub concurrency: u16,
 
     /// The file for error PDB ids, default: "error.pdb-id.log"
     #[clap(short, long, value_parser, display_order = 5)]
